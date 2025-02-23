@@ -97,7 +97,7 @@ function App() {
                 <div className="flex items-center space-x-4 mb-8">
                   <span className="text-[#939090] text-sm tracking-[0.2em]">Our Partner</span>
                   <img 
-                    src="/stacia.png" 
+                    src="https://cdn.jsdelivr.net/gh/rohitmenonhart-xhunter/ello.one_production-3@465f98905e43081100df2b7eebc2866f624e42d3/public/stacia.png" 
                     alt="Stacia" 
                     className="h-8 sm:h-10 opacity-90 hover:opacity-100 transition-all duration-300 rounded-lg hover:scale-105 transform"
                   />
