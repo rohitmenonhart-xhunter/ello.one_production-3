@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200; /* This makes it thin/light */
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+  50% { transform: translateY(-8px) rotate(0.5deg) scale(1.01); }
+}
+
+@keyframes beam {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) rotate(45deg) translateX(-50%);
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) rotate(45deg) translateX(50%);
+  }
+}
+
+.beam {
+  position: absolute;
+  width: 0.5px;
+  height: 150vh;
+  background: linear-gradient(to top, transparent, rgba(147, 144, 144, 0.5), transparent);
+  animation: beam 12s infinite;
+  filter: blur(1px);
+}
+
+.beam:nth-child(1) { left: 5%; animation-delay: 0s; }
+.beam:nth-child(2) { left: 15%; animation-delay: 1.2s; }
+.beam:nth-child(3) { left: 25%; animation-delay: 2.4s; }
+.beam:nth-child(4) { left: 35%; animation-delay: 3.6s; }
+.beam:nth-child(5) { left: 45%; animation-delay: 4.8s; }
+.beam:nth-child(6) { left: 55%; animation-delay: 6s; }
+.beam:nth-child(7) { left: 65%; animation-delay: 7.2s; }
+.beam:nth-child(8) { left: 75%; animation-delay: 8.4s; }
+.beam:nth-child(9) { left: 85%; animation-delay: 9.6s; }
+.beam:nth-child(10) { left: 95%; animation-delay: 10.8s; }
+
+.floating {
+  animation: float 8s ease-in-out infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #939090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(147, 144, 144, 0.05);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(147, 144, 144, 0.15);
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  background: linear-gradient(120deg, rgba(147, 144, 144, 0.03), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(147, 144, 144, 0.1);
+}
+
+.grid-pattern {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(147, 144, 144, 0.03) 2px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .beam {
+    height: 120vh;
+  }
+  
+  .grid-pattern {
+    background-size: 15px 15px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better touch interactions */
+@media (hover: none) {
+  .hover-glow {
+    box-shadow: 0 0 20px rgba(147, 144, 144, 0.05);
+  }
+}
+
+/* New gradient animations */
+.gradient-shine {
+  background: linear-gradient(
+    45deg,
+    transparent 25%,
+    rgba(147, 144, 144, 0.05) 50%,
+    transparent 75%
+  );
+  background-size: 200% 200%;
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 200%; }
+}
+
+/* Add these new animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group:hover .group-hover\:h-auto {
+  animation: slideDown 0.3s ease-out forwards;
+}
