@@ -611,6 +611,57 @@ function App() {
             </div>
           </section>
 
+          {/* Our Partners Section */}
+          <section id="partners" aria-label="Our Partners" className="py-16 sm:py-20 relative overflow-hidden">
+            {/* Background effects */}
+            <div className="absolute inset-0 bg-dark-900"></div>
+            <div className="absolute inset-0 cyber-grid opacity-10"></div>
+            
+            {/* Subtle glow */}
+            <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800/50 to-dark-900"></div>
+            
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center space-x-2 mb-4">
+                  <div className="h-px w-8 bg-neon-green"></div>
+                  <span className="text-xs tracking-[0.3em] uppercase text-neon-green">Collaborations</span>
+                  <div className="h-px w-8 bg-neon-green"></div>
+                </div>
+                <h2 className="text-2xl sm:text-3xl tracking-[0.2em] text-gradient-blue relative">Our Partners</h2>
+              </div>
+              
+              <div className="flex flex-wrap justify-center items-center gap-12">
+                {/* Stacia Corp */}
+                <div className="group">
+                  <div className="relative overflow-hidden rounded-lg p-6 bg-dark-800/50 border border-neon-green/10 hover:border-neon-green/30 transition-all duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-br from-neon-green/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div className="relative flex flex-col items-center">
+                      <img 
+                        src="/stacia.png" 
+                        alt="Stacia Corp" 
+                        className="h-16 sm:h-20 object-contain filter drop-shadow-[0_0_8px_rgba(0,255,102,0.3)] transition-all duration-500 group-hover:drop-shadow-[0_0_12px_rgba(0,255,102,0.5)]" 
+                      />
+                      <p className="mt-4 text-accent-primary text-xs sm:text-sm text-center max-w-xs tracking-wider group-hover:text-white transition-colors duration-300">
+                        Strategic technology partner in advanced research and development
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Placeholder for future partners */}
+                <div className="hidden sm:block">
+                  <div className="relative overflow-hidden rounded-lg p-6 bg-dark-800/30 border border-accent-primary/5 transition-all duration-500 min-w-[200px] min-h-[150px] flex items-center justify-center">
+                    <div className="text-accent-primary/50 text-sm">
+                      <Plus className="h-6 w-6 mx-auto mb-2 opacity-30" />
+                      <span>Future Partner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Products Section */}
           <section id="products" aria-label="Products" className="py-24 sm:py-32 relative overflow-hidden">
             {/* Background effects */}
