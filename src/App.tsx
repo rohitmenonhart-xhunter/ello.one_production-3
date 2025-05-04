@@ -637,11 +637,18 @@ function App() {
                     <div className="absolute inset-0 bg-gradient-to-br from-neon-green/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     
                     <div className="relative flex flex-col items-center">
-                      <img 
-                        src="/stacia.png" 
-                        alt="Stacia Corp" 
-                        className="h-16 sm:h-20 object-contain filter drop-shadow-[0_0_8px_rgba(0,255,102,0.3)] transition-all duration-500 group-hover:drop-shadow-[0_0_12px_rgba(0,255,102,0.5)]" 
-                      />
+                      <a 
+                        href="https://staciacorp.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="hover:scale-105 transition-transform duration-300"
+                      >
+                        <img 
+                          src="/stacia.png" 
+                          alt="Stacia Corp" 
+                          className="h-16 sm:h-20 object-contain filter drop-shadow-[0_0_8px_rgba(0,255,102,0.3)] transition-all duration-500 group-hover:drop-shadow-[0_0_12px_rgba(0,255,102,0.5)]" 
+                        />
+                      </a>
                       <p className="mt-4 text-accent-primary text-xs sm:text-sm text-center max-w-xs tracking-wider group-hover:text-white transition-colors duration-300">
                         Strategic technology partner in advanced research and development
                       </p>
