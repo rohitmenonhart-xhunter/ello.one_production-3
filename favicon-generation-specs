@@ -1,0 +1,62 @@
+// favicon.ico (multi-size ico file)
+dimensions: [16, 32, 48]
+background: transparent
+logo_color: #939090
+format: ICO
+
+// favicon-16x16.png
+dimensions: 16x16
+background: transparent
+logo_color: #939090
+format: PNG
+
+// favicon-32x32.png
+dimensions: 32x32
+background: transparent
+logo_color: #939090
+format: PNG
+
+// apple-touch-icon.png
+dimensions: 180x180
+background: #000000
+logo_color: #939090
+padding: 10%
+format: PNG
+
+// android-chrome-192x192.png
+dimensions: 192x192
+background: #000000
+logo_color: #939090
+padding: 10%
+format: PNG
+
+// android-chrome-512x512.png
+dimensions: 512x512
+background: #000000
+logo_color: #939090
+padding: 10%
+format: PNG
+
+// og-image.png
+dimensions: 1200x630
+background: #000000
+logo_size: 20% of height
+logo_color: #939090
+text: "ello.one"
+text_color: gradient from #ffffff to #939090
+text_position: right of logo
+text_size: 60px
+font: Helvetica Neue Light
+format: PNG
+
+// twitter-image.png
+dimensions: 1200x600
+background: #000000
+logo_size: 20% of height
+logo_color: #939090
+text: "ello.one"
+text_color: gradient from #ffffff to #939090
+text_position: right of logo
+text_size: 60px
+font: Helvetica Neue Light
+format: PNG 
